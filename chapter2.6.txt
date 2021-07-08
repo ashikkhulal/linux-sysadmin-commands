@@ -1,0 +1,23 @@
+Chapter 2.6: Permissions and Links
+
+//
+chmod
+
+//
+chown
+
+- you can use symbolic permission way or
+- you can use numeric permission way
+
+//
+umask
+
+//
+groups
+
+// soft link
+ln -s
+
+// hard link 
+ln 
+

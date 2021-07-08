@@ -1,3 +1,48 @@
 Chapter 2.4: Manipulating Text Files in Linux
 
+// to make directory
+$ mkdir <directory_name>
+eg. $ mkdir logs
+
+// to make a directory with a parent directory
+$ mkdir -p <parent_dir_name>/<child_dir_name>
+eg. $ mkdir -p logs/raw_logs
+
+// to create a file 
+$ touch <filename>
+
+//
+$ tree .
+
+
+//
+$ grep
+eg. $ sudo grep httpd /var/log/* > logs/raw_logs/master.log 2> logs/raw_logs/error.log // 2 represents standard error
+
+//
+$ egrep
+$ egrep -v // excludes that
+eg. egrep -v "dnf|secure" raw_logs/master.log > httpd_logs/no_dnf_secure.log
+
+//
+$ wc -l 
+eg. wc -l logs/raw_logs/master.log
+
 // 
+$ echo
+
+// to overwrite a file content
+$ echo hello > abc.txt
+
+// to append a file content
+$ echo world >> abc.txt
+
+//
+eg. journalctl --unit=httpd --no-pager >> logs/raw_logs/master.log
+
+// to create a backup of a file
+use cp command
+
+// for a backup of a folder, you can either copy a folder or use make a tar ball of the folder
+
+

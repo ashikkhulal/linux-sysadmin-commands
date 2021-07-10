@@ -32,4 +32,5 @@
     $ df -h
 
 // to check disk usage
+    
     $ du -hT

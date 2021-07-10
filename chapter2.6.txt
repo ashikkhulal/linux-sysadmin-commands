@@ -1,23 +1,23 @@
 Chapter 2.6: Permissions and Links
 
-//
-chmod
+// changes the file mode bits of each given file according to mode
+$ chmod
+// change file owner and group
+$ chown
 
-//
-chown
-
+With chmod,
 - you can use symbolic permission way or
 - you can use numeric permission way
 
-//
-umask
+// to set mode
+$ umask
 
-//
-groups
+// print the groups a user is in
+$ groups
 
 // soft link
-ln -s
+$ ln -s
 
 // hard link 
-ln 
+$ ln 
 

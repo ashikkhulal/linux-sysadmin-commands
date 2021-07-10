@@ -1,12 +1,13 @@
-Chapter 2.5: Editing Text Files Using vi/vim
+# **Chapter 2.5: Editing Text Files Using vi/vim**
 
 // to create and edit a file or just edit an existing file
-$ vi <filename>
-$ vim <filename>
 
-vi/vim has three modes: command, insert, esc modes
+    $ vi <filename>
+    $ vim <filename>
 
-In command mode:
+Vi/Vim has three modes: **command**, **insert** and **Esc** modes
+
+**In command mode:**
 - use dd to delete a line
 - use x to delete a single character
 - alternatively we can use 10x to use 10 characters
@@ -16,9 +17,9 @@ In command mode:
 - use O to add line above
 - use o to add line below
 
-To enter an insert mode, use i.
+**To enter an insert mode, use `i`**
 
-To quit an insert mode, use esc.
+**To quit an insert mode, use `Esc` :**
 - :w to write
 - :w <new_file_name> to write into a new file
 - :q to quit

@@ -22,11 +22,11 @@ eg. $ sudo grep httpd /var/log/* > logs/raw_logs/master.log 2> logs/raw_logs/err
 // like grep, egrep also searches  for  PATTERN in each FILE
 $ egrep
 $ egrep -v // excludes that
-eg. egrep -v "dnf|secure" raw_logs/master.log > httpd_logs/no_dnf_secure.log
+eg. $ egrep -v "dnf|secure" raw_logs/master.log > httpd_logs/no_dnf_secure.log
 
 // Print newline, word, and byte counts for each FILE, and a total line if more than one FILE is specified
 $ wc -l 
-eg. wc -l logs/raw_logs/master.log
+eg. $ wc -l logs/raw_logs/master.log
 
 // display a line of text
 $ echo
@@ -38,7 +38,7 @@ $ echo hello > abc.txt
 $ echo world >> abc.txt
 
 // used to query the contents of the systemd
-eg. journalctl --unit=httpd --no-pager >> logs/raw_logs/master.log
+eg. $ journalctl --unit=httpd --no-pager >> logs/raw_logs/master.log
 
 // to create a backup of a file
 use cp command

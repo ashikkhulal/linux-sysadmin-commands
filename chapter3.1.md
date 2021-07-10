@@ -1,4 +1,4 @@
-Chapter 3.1: Creating Simple Shell Scripts
+# **Chapter 3.1: Creating Simple Shell Scripts**
 
 Bash scripts are great for automation purposes. A formal bash script contains following:
 

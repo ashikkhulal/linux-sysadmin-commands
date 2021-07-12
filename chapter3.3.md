@@ -36,14 +36,44 @@
 
 // Examples
 
-`* * * * *`: for every minute
-    
-`0 * * * *`: for every hour
-    
-`*/5 * * * *`: for every 5 minutes
-    
+for every minute:
+|Minute   |Hour     |Date     |Month    |DOW      |
+|---------|---------|---------|---------|---------|
+|*        |*        |*        |*        |    *    |
+
+for every hour:    
+|Minute   |Hour     |Date     |Month    |DOW      |
+|---------|---------|---------|---------|---------|
+|0        |*        |*        |*        |    *    |
+
+for every 5 minutes:
+|Minute   |Hour     |Date     |Month    |DOW      |
+|---------|---------|---------|---------|---------|
+|*/5      |*        |*        |*        |    *    |
+  
 Note: make sure you pick the value that ranges into the sequences you pick without putting the remainders (eg. `*/10 * * * *` instead of `*/7 * * * *`)
 
-`30 9-17 * *`: MON-FRI for Nine Thirty AM and Five Thirty PM Monday to Friday
-    
-`10 11 12-17 * WED` : At 11:10 AM of every wednesday that occurs between 12th and 17th of every month  
+for Nine Thirty AM and Five Thirty PM Monday to Friday:
+|Minute   |Hour     |Date     |Month    |DOW      |
+|---------|---------|---------|---------|---------|
+|30       |9-17     |*        |*        |MON-FRI  |
+
+At 11:10 AM of every wednesday that occurs between 12th and 17th of every month:
+|Minute   |Hour     |Date     |Month    |DOW      |
+|---------|---------|---------|---------|---------|
+|10       |11       |12-17    |*        |WED      |
+
+for every 3 hours:
+|Minute   |Hour     |Date     |Month    |DOW      |
+|---------|---------|---------|---------|---------|
+|0        |*/3        |*        |*        |    *    |
+
+
+|Minute   |Hour     |Date     |Month    |DOW      |
+|---------|---------|---------|---------|---------|
+|30        |1/3        |*        |*        |    *    |
+
+Online crontab guru: https://crontab.guru/
+
+
+

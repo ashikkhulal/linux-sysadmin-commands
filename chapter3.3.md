@@ -1,5 +1,12 @@
 # **CRON - task scheduling in Linux**
 
+A crontab file contains instructions for the cron(8) daemon in the following simplified manner: "run this command at this time on this date". Each user can define their own crontab. Commands defined in any given crontab are executed under the user who owns that particular crontab. Uucp and News usually have their own crontabs, eliminating the need for explicitly running su(1) as part of a cron command.
+Blank lines, leading spaces, and tabs are ignored. Lines whose first non-white space character is a pound-sign (#) are comments, and are not processed. Note that comments are not allowed on the same line as cron commands, since they are considered a part of the command. Similarly, comments are not allowed on the same line as environment variable settings.
+
+An active line in a crontab is either an environment setting or a cron command. An environment setting is of the form:
+
+    name = value
+
 // list entries in crontab
 
     $ crontab -l
@@ -68,7 +75,7 @@ for every 3 hours:
 |---------|---------|---------|---------|---------|
 |0        |*/3        |*        |*        |    *    |
 
-
+At minute 30 past every 3rd hour from 1 through 23: 
 |Minute   |Hour     |Date     |Month    |DOW      |
 |---------|---------|---------|---------|---------|
 |30        |1/3        |*        |*        |    *    |

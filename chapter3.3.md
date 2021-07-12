@@ -36,9 +36,14 @@
 
 // Examples
 
-    * * * * * for every minute
-    0 * * * * for every hour
-    */5 * * * * for every 5 minutes
-    Note: make sure you pick the value that ranges into the sequences you pick without putting the remainders (eg. */10 * * * * instead of */7 * * * *)
-    30 9-17 * * MON-FRI for Nine Thirty AM and Five Thirty PM Monday to Friday
+    `* * * * *` for every minute
     
+    `0 * * * *` for every hour
+    
+    `*/5 * * * *` for every 5 minutes
+    
+    Note: make sure you pick the value that ranges into the sequences you pick without putting the remainders (eg. `*/10 * * * *` instead of `*/7 * * * *`)
+    
+    `30 9-17 * *` MON-FRI for Nine Thirty AM and Five Thirty PM Monday to Friday
+    
+    `10 11 12-17 *` WED at 11:10 AM of every wednesday that occurs between 12th and 17th of every month  

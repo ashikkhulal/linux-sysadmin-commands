@@ -25,7 +25,7 @@
 
     $ bzip2
     eg. $ bzip2 /home/archives/user1.tar // for already archived file
-    eg. $ bzip2 -d /home/archives/user1.tar // to uncompress file
+    eg. $ bzip2 -d /home/archives/user1.tar.bz2 // to uncompress file
 
 // to check disk memory free
 

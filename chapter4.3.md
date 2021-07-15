@@ -26,4 +26,4 @@ A `Linux` system is a collection of processes.
 // another way to kill process: 
 
     $ pgrep <process>
-    $ pkill <process>
+    $ pkill <pid>

@@ -21,5 +21,5 @@
     $ apropos <service/commands>
     eg. apropos httpd
 
-    $ man <page from aporpos> <detailed service/commands from apropos>
+    $ man <page from apropos> <detailed service/commands from apropos>
     eg. $ man 8 httpd.service

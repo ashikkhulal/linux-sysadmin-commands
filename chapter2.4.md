@@ -15,8 +15,8 @@
     $ touch <filename>
 
 // to display into tree format
+    
     $ tree .
-
 
 // grep  searches  for  PATTERN in each FILE
 
@@ -47,10 +47,12 @@
     $ echo world >> abc.txt
 
 // used to query the contents of the systemd
-eg. $ journalctl --unit=httpd --no-pager >> logs/raw_logs/master.log
+
+    eg. $ journalctl --unit=httpd --no-pager >> logs/raw_logs/master.log
 
 // to create a backup of a file
-use cp command
+
+    use cp command or tar/star commands
 
 // for a backup of a folder, you can either copy a folder or use make a tar ball of the folder
 

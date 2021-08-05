@@ -23,10 +23,12 @@ Two options:
 
 
 // check the mount:
-  $ mount | grep <folder>
-  $ lsblk
-  $ blkid | grep <name>  // to check UUID
-  $ df -hk
+  
+    $ mount | grep <folder>
+    $ lsblk
+    $ blkid | grep <name>  // to check UUID
+    $ df -hk
 
 // mount after making persistent in /etc/fstab:
-  $ umount <folder> ; mount -a 
+  
+    $ umount <folder> ; mount -a 

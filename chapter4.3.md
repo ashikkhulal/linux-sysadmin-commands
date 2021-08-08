@@ -1,4 +1,4 @@
-# **Managing Individual Linux Processes**
+# **Chapter 4.3: Managing Individual Linux Processes**
 
 A `Linux` system is a collection of processes.
 

@@ -1,0 +1,1 @@
+# **Chapter 6.5: Managing Layered Local Storage with Stratis on RHEL 8**

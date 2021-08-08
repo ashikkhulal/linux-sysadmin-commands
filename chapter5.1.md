@@ -1,4 +1,4 @@
-# **Configuring Local Storage on RHEL8**
+# **Chapter 5.1: Configuring Local Storage**
 
 - Manage `MBR` and `GPT partitions` using `fdisk` and `gdisk`
 - Managing system `swap`-**add/remove** using `swapon`, `swapoff`, and `mkswap`

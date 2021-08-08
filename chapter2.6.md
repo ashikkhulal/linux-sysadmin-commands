@@ -1,30 +1,36 @@
-# **Chapter 2.6: Permissions and Links**
+# **Chapter 2.6: Archiving, Compressing and Decompressing Files in Linux**
 
-// changes the file mode bits of each given file according to mode
+// to archive files or directory
 
-    $ chmod
+    $ tar
+    eg. $ tar cvf /home/archives/user1.tar user1
+    eg. $ tar tvf /home/archives/user1.tar // to list archive file
+    eg. $ tar cvfz /home/archives/user1.tar.gz user1 // to archive and compress gzip file
+    eg. $ tar xvfj /home/archives/user1.star.bz2 // to uncompress and unarchive bzip2 file 
 
-// change file owner and group
+// to archive files or directory
 
-    $ chown
+    star
+    eg. $ star -cv file=/home/archives/user1.star user1
+    eg. $ star -tv file=/home/archives/user1.star // to list archive file
+    eg. $ star -cv -bz file=/home/archives/user1.star.bz2 user2 // to archive and compress file
 
-With chmod,
-- you can use symbolic permission way or
-- you can use numeric permission way
+// to compress files or directory
 
-// to set mode
+    $ gzip
+    eg. $ gzip /home/archives/user1.tar // for already compressed file
 
-    $ umask
 
-// print the groups a user is in
+// to compress files or directory
 
-    $ groups
+    $ bzip2
+    eg. $ bzip2 /home/archives/user1.tar // for already archived file
+    eg. $ bzip2 -d /home/archives/user1.tar.bz2 // to uncompress file
 
-// soft link
+// to check disk memory free
 
-    $ ln -s
+    $ df -h
 
-// hard link 
-
-    $ ln 
-
+// to check disk usage
+    
+    $ du -hT

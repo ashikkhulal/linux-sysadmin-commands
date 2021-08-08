@@ -1,4 +1,4 @@
-# **Understanding Logging and Using Persistent Journals on RHEL 8**
+# **Chapter 4.2: Understanding Logging and Using Persistent Journals**
 
 - **The /var/log directory:** The old-school directory for `system and application logs`
 - **journalctl:** Utility to query the `systemd journal`

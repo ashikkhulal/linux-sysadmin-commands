@@ -1,4 +1,4 @@
-# **Managing the Boot Processon RHEL 8**
+# **Chapter 4.1: Managing the Boot Process**
 
 // **BIOS/POST**: Server is powered on, `BIOS` loads and executes `POST`
 

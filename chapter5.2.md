@@ -1,4 +1,4 @@
-# **Managing Mounted Disks in RHEL 8**
+# **Chapter 5.2: Managing Mounted Disks**
 
 **Persistent Mounts:** Mounts that are configured to mount automatically, such as at boot time or when a request to mount all file systems is issued. They ensure our system is configured to survive routine processes, such as reboot.
 

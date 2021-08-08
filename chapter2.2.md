@@ -1,41 +1,25 @@
-# **Chapter 2.2: Accessing Linux Systems**
+# **Chapter 2.2: Using System Documentations**
 
-// check an ip address
+// System documentation 
+
+    $ man <service/commands>
+    eg. $ man httpd
+
+    $ info <service/commands>
+    eg. info mariadb
+    $ ls -al /usr/share/doc | egrep -i "service/commands"
+    eg.	$ ls -al /usr/share/doc | egrep -i "httpd|mariadb|mysql" // if you get any hits from ls -al /usr/share/doc command, cd into that directory with specific grep output to find more documentations
     
-    $ ip a s
-
-// to be root
-
-    $ su - root
-    $ su - <user>
-    $ sudo -i
-    $ sudo <command>
-
-// to generate ssh key
-
-    $ ssh-keygen
-    $ ssh-keygen -t rsa
-
-// to copy ssh-key to another server
-
-    $ ssh-copy-id <user>@<other server Pip>
-
-// to verify successful ssh connection
-
-    $ ssh <user>@<other server Pip>
-
-// to check RHEL OS version
-
-    $ cat /etc/redhat-release
-
-// to do sftp
-
-    $ sftp <user>@<other server Pip>
-    ? or help for commands
-
-// sftp for server copy 
+    $ <service/commands> --help
+    eg. $ mariadb --help
+    $ <service/commands> -?
+    eg. $ mariadb -?
     
-    $ mget <filename>
-    $ quit  //to quit 
+    $ whatis <service/commands>
+    eg. $ whatis httpd
+    
+    $ apropos <service/commands>
+    eg. apropos httpd
 
-
+    $ man <page from apropos> <detailed service/commands from apropos>
+    eg. $ man 8 httpd.service

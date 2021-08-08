@@ -1,4 +1,6 @@
-# **Vim Simple Navigation**
+# **Chapter 2.4 extn: Vim Lab**
+
+## **Vim Simple Navigation**
 
     1. Go to the top of the file with gg.
     2. Go to the bottom of the file with G.
@@ -15,7 +17,7 @@
     13. Go to the bottom of the file using G.
     14. Use ?help to search backwards.
     15. Exit without saving using q!.
-# **Inserting, Copying, and Deleting Text**
+## **Inserting, Copying, and Deleting Text**
     1. Go to the top of the file with gg and then navigate to the line that starts with Get out of Vim.
     2. Press o to add a line under the current line.
     3. On that line, add the following text, taking care to line up the : with the other instances of : on other lines:
@@ -35,7 +37,7 @@
     17. Restore all changes to the file by pressing Ctrl-r repeatedly, noting what each "change" is made up of, and also what the status line says about how many changes were made.
     18. When all changes have been redone, you'll see Already at newest change.
 
-# **Saving and/or Exiting**
+## **Saving and/or Exiting**
     a. Save your changed buffer to a new file by typing:
             :w ~/<newfilename>.txt
     c. Look to see if you are in that buffer, or in the old buffer by pressing:
@@ -45,7 +47,7 @@
     g. Press ENTER and exit the changed buffer without saving any changes with:
             :q!
 
-# **Resources for Getting Help**
+## **Resources for Getting Help**
     1. Run vim with no file argument:
             vim
     2. In Command Mode, use :help to get into Help Mode.

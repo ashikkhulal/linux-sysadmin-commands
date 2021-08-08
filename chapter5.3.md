@@ -1,4 +1,4 @@
-# **Using Logical Volume Management (LVM) on RHEL 8**
+# **Chapter 5.3: Using Logical Volume Management (LVM)**
 
 // check the volumes
     

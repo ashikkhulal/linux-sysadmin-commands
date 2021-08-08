@@ -1,4 +1,4 @@
-# **Managing Tuned Profiles on RHEL8**
+# **Chapter 4.4: Managing Tuned Profiles**
 
 The Tuned service is an intelligent application that uses system monitoring to optimize system performance for specific types of workloads.
 

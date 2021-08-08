@@ -1,27 +1,30 @@
-# **Chapter 2.5: Editing Text Files Using vi/vim**
+# **Chapter 2.5: Permissions and Links**
 
-// to create and edit a file or just edit an existing file
+// changes the file mode bits of each given file according to mode
 
-    $ vi <filename>
-    $ vim <filename>
+    $ chmod
 
-Vi/Vim has three modes: **command**, **insert** and **Esc** modes
+// change file owner and group
 
-**In command mode:**
-- use dd to delete a line
-- use x to delete a single character
-- alternatively we can use 10x to use 10 characters
-- use r and a character to overwrite in a space
-- use u to undo
-- use . to repeat an action
-- use O to add line above
-- use o to add line below
+    $ chown
 
-**To enter an insert mode, use `i`**
+With chmod,
+- you can use symbolic permission way or
+- you can use numeric permission way
 
-**To quit an insert mode, use `Esc` :**
-- :w to write
-- :w <new_file_name> to write into a new file
-- :q to quit
-- :wq to write and quit
-- :wq! to write and quit forcefully
+// to set mode
+
+    $ umask
+
+// print the groups a user is in
+
+    $ groups
+
+// soft link
+
+    $ ln -s
+
+// hard link 
+
+    $ ln 
+

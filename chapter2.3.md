@@ -1,25 +1,59 @@
-# **Chapter 2.3: Using System Documentations**
+# **Chapter 2.3: Manipulating Text Files in Linux**
 
-// System documentation 
+// to make directory
 
-    $ man <service/commands>
-    eg. $ man httpd
+    $ mkdir <directory_name>
+    eg. $ mkdir logs
 
-    $ info <service/commands>
-    eg. info mariadb
-    $ ls -al /usr/share/doc | egrep -i "service/commands"
-    eg.	$ ls -al /usr/share/doc | egrep -i "httpd|mariadb|mysql" // if you get any hits from ls -al /usr/share/doc command, cd into that directory with specific grep output to find more documentations
+// to make a directory with a parent directory
+
+    $ mkdir -p <parent_dir_name>/<child_dir_name>
+    eg. $ mkdir -p logs/raw_logs
+
+// to create a file 
+
+    $ touch <filename>
+
+// to display into tree format
     
-    $ <service/commands> --help
-    eg. $ mariadb --help
-    $ <service/commands> -?
-    eg. $ mariadb -?
-    
-    $ whatis <service/commands>
-    eg. $ whatis httpd
-    
-    $ apropos <service/commands>
-    eg. apropos httpd
+    $ tree .
 
-    $ man <page from apropos> <detailed service/commands from apropos>
-    eg. $ man 8 httpd.service
+// grep  searches  for  PATTERN in each FILE
+
+    $ grep
+    eg. $ sudo grep httpd /var/log/* > logs/raw_logs/master.log 2> logs/raw_logs/error.log // 2 represents standard error
+
+// like grep, egrep also searches  for  PATTERN in each FILE
+
+    $ egrep
+    $ egrep -v // excludes that
+    eg. $ egrep -v "dnf|secure" raw_logs/master.log > httpd_logs/no_dnf_secure.log
+
+// Print newline, word, and byte counts for each FILE, and a total line if more than one FILE is specified
+
+    $ wc -l 
+    eg. $ wc -l logs/raw_logs/master.log
+
+// display a line of text
+
+    $ echo
+
+// to overwrite a file content
+
+    $ echo hello > abc.txt
+
+// to append a file content
+
+    $ echo world >> abc.txt
+
+// used to query the contents of the systemd
+
+    eg. $ journalctl --unit=httpd --no-pager >> logs/raw_logs/master.log
+
+// to create a backup of a file
+
+    use cp command or tar/star commands
+
+// for a backup of a folder, you can either copy a folder or use make a tar ball of the folder
+
+
